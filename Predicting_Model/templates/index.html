@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Bank Term Deposit Prediction</title>
+  <meta name="description" content="Bank Term Deposit Prediction">
+  <meta name="author" content="YourTeam">
+</head>
+
+<body>
+    <h2>Bank Term Deposit Subscription Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+
+        <label for="job">Job:</label>
+        <select id="job" name="job">
+          <option value="job_admin.">Admin</option>
+          <option value="job_blue-collar">Blue-collar</option>
+          <option value="job_entrepreneur">Entrepreneur</option>
+          <option value="job_housemaid">Housemaid</option>
+          <option value="job_management">Management</option>
+          <option value="job_retired">Retired</option>
+          <option value="job_self-employed">Self-employed</option>
+          <option value="job_services">Services</option>
+          <option value="job_student">Student</option>
+          <option value="job_technician">Technician</option>
+          <option value="job_unemployed">Unemployed</option>
+          <option value="job_unknown">Unknown</option>
+        </select><br><br>
+
+        <label for="marital">Marital:</label>
+        <select id="marital" name="marital">
+          <option value="marital_divorced">Divorced</option>
+          <option value="marital_married">Married</option>
+          <option value="marital_single">Single</option>
+        </select><br><br>
+
+        <label for="education">Education:</label>
+        <select id="education" name="education">
+          <option value="education_primary">Primary</option>
+          <option value="education_secondary">Secondary</option>
+          <option value="education_tertiary">Tertiary</option>
+          <option value="education_unknown">Unknown</option>
+        </select><br><br>
+
+        <label for="default">Default:</label>
+        <select id="default" name="default">
+          <option value="default_no">No</option>
+          <option value="default_yes">Yes</option>
+        </select><br><br>
+
+        <label for="balance">Balance:</label>
+        <input type="text" id="balance" name="balance"><br><br>
+
+        <label for="housing">Housing:</label>
+        <select id="housing" name="housing">
+          <option value="housing_no">No</option>
+          <option value="housing_yes">Yes</option>
+        </select><br><br>
+
+        <label for="loan">Loan:</label>
+        <select id="loan" name="loan">
+          <option value="loan_no">No</option>
+          <option value="loan_yes">Yes</option>
+        </select><br><br>
+
+        <label for="contact">Contact:</label>
+        <select id="contact" name="contact">
+          <option value="contact_cellular">Cellular</option>
+          <option value="contact_telephone">Telephone</option>
+          <option value="contact_unknown">Unknown</option>
+        </select><br><br>
+
+        <label for="day">Day:</label>
+        <input type="text" id="day" name="day"><br><br>
+
+        <label for="month">Month:</label>
+        <select id="month" name="month">
+          <option value="month_jan">January</option>
+          <option value="month_feb">February</option>
+          <option value="month_mar">March</option>
+          <option value="month_apr">April</option>
+          <option value="month_may">May</option>
+          <option value="month_jun">June</option>
+          <option value="month_jul">July</option>
+          <option value="month_aug">August</option>
+          <option value="month_sep">September</option>
+          <option value="month_oct">October</option>
+          <option value="month_nov">November</option>
+          <option value="month_dec">December</option>
+        </select><br><br>
+
+        <label for="duration">Duration:</label>
+        <input type="text" id="duration" name="duration"><br><br>
+
+        <label for="campaign">Campaign:</label>
+        <input type="text" id="campaign" name="campaign"><br><br>
+
+        <label for="pdays">Pdays:</label>
+        <input type="text" id="pdays" name="pdays"><br><br>
+
+        <label for="previous">Previous:</label>
+        <input type="text" id="previous" name="previous"><br><br>
+
+        <label for="poutcome">Poutcome:</label>
+        <select id="poutcome" name="poutcome">
+          <option value="poutcome_failure">Failure</option>
+          <option value="poutcome_other">Other</option>
+          <option value="poutcome_success">Success</option>
+          <option value="poutcome_unknown">Unknown</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
